@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Manifest Safaris & Adventures</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  :root {
+    --black: #000000;
+    --orange: #ff7a00;
+    --white: #ffffff;
+    --beige: #d8c7a1;
+  }
+  body { background: var(--beige); color: var(--black); }
+  .navbar { background: var(--black); }
+  .navbar-brand, .navbar-nav .nav-link { color: var(--white) !important; font-weight: bold; }
+  .navbar-nav .nav-link:hover { color: var(--orange) !important; }
+  .section-title { margin: 40px 0 20px; font-weight:bold; text-align:center; }
+  .contact-form { background: var(--white); padding: 30px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1);}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Manifest Safaris</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Safaris & Adventure</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="kenya.html">Kenya</a></li>
+            <li><a class="dropdown-item" href="uganda.html">Uganda</a></li>
+            <li><a class="dropdown-item" href="rwanda.html">Rwanda</a></li>
+            <li><a class="dropdown-item" href="zanzibar.html">Zanzibar</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="signup.html">Sign Up</a></li>
+        <li class="nav-item"><a class="nav-link" href="holiday.html">Holiday Packages</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Contact Section -->
+<section class="container my-5">
+  <h2 class="section-title">Contact Us</h2>
+  <p class="text-center">Have questions or want to book a safari? Send us a message and we'll get back to you!</p>
+  
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form class="contact-form" action="mailto:info@manifestsafaris.com" method="post" enctype="text/plain">
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="name" name="Name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="email" name="Email" required>
+        </div>
+        <div class="mb-3">
+          <label for="subject" class="form-label">Subject</label>
+          <input type="text" class="form-control" id="subject" name="Subject" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" name="Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-warning w-100">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="text-center mt-4">
+    <p>Email us directly at: <a href="mailto:info@manifestsafaris.com">info@manifestsafaris.com</a></p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-4" style="background: var(--black); color: var(--white);">
+  <p>&copy; 2025 Manifest Safaris & Adventures. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

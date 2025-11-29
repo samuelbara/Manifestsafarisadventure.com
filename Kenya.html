@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kenya Safaris | Manifest Safaris & Adventures</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  :root {
+    --black: #000000;
+    --orange: #ff7a00;
+    --white: #ffffff;
+    --beige: #d8c7a1;
+  }
+  body { background: var(--beige); color: var(--black); }
+  .navbar { background: var(--black); }
+  .navbar-brand, .navbar-nav .nav-link { color: var(--white) !important; font-weight: bold; }
+  .navbar-nav .nav-link:hover { color: var(--orange) !important; }
+  .carousel-inner img { height: 400px; object-fit: cover; border-radius:8px; }
+  .section-title { margin: 40px 0 20px; font-weight:bold; text-align:center; }
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Manifest Safaris</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Safaris & Adventure</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item active" href="kenya.html">Kenya</a></li>
+            <li><a class="dropdown-item" href="uganda.html">Uganda</a></li>
+            <li><a class="dropdown-item" href="rwanda.html">Rwanda</a></li>
+            <li><a class="dropdown-item" href="zanzibar.html">Zanzibar</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="signup.html">Sign Up</a></li>
+        <li class="nav-item"><a class="nav-link" href="holiday.html">Holiday Packages</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Big Five Carousel -->
+<section class="container my-5">
+  <h2 class="section-title">Explore Africa's Big Five</h2>
+  <div id="bigFiveCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images.unsplash.com/photo-1581804928343-502cb5e5f528" class="d-block w-100" alt="Lion">
+        <div class="carousel-caption d-none d-md-block"><h5>Lion</h5></div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1535930749574-1399327ce78f" class="d-block w-100" alt="Leopard">
+        <div class="carousel-caption d-none d-md-block"><h5>Leopard</h5></div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1589470730131-10e7b0c246b0" class="d-block w-100" alt="Elephant">
+        <div class="carousel-caption d-none d-md-block"><h5>Elephant</h5></div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1563148171-34e6443c32e0" class="d-block w-100" alt="Rhino">
+        <div class="carousel-caption d-none d-md-block"><h5>Rhino</h5></div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1516303080726-97814c9a1f70" class="d-block w-100" alt="Buffalo">
+        <div class="carousel-caption d-none d-md-block"><h5>Buffalo</h5></div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#bigFiveCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#bigFiveCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+<!-- Kenya Safari Packages Carousel -->
+<section class="container my-5">
+  <h2 class="section-title">Kenya Safari Packages</h2>
+  <div id="kenyaCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2" class="d-block w-100" alt="Masai Mara">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Manifest Mini-Safari – 3 Days (Masai Mara / Amboseli)</h5>
+          <p>Rate: USD 700. Perfect short escape into the wilderness.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1508671546091-2a79f4c135f3" class="d-block w-100" alt="Classic Safari">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Kenya Classic Safari – 7 Days (Mara, Naivasha, Amboseli)</h5>
+          <p>Rate: USD 1,850. Explore Kenya’s iconic parks in luxury.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" class="d-block w-100" alt="Great Migration">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Great Migration Safari – 10 Days (Mara + Serengeti)</h5>
+          <p>Rate: USD 2,950. Witness the world’s greatest wildlife spectacle.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#kenyaCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#kenyaCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-4" style="background: var(--black); color: var(--white);">
+  <p>&copy; 2025 Manifest Safaris & Adventures. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

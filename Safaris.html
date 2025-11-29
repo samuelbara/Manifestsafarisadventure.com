@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manifest Safaris & Adventures</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  :root {
+    --black: #000000;
+    --orange: #ff7a00;
+    --white: #ffffff;
+    --beige: #d8c7a1;
+  }
+  body { background: var(--beige); color: var(--black); scroll-behavior: smooth; }
+  .navbar { background: var(--black); }
+  .navbar-brand, .navbar-nav .nav-link { color: var(--white) !important; font-weight: bold; }
+  .navbar-nav .nav-link:hover { color: var(--orange) !important; }
+  footer { background: var(--black); color: var(--white); padding:30px 20px; }
+  .carousel-inner img { height: 400px; object-fit: cover; border-radius:8px; }
+  .section-title { margin: 40px 0 20px; font-weight:bold; }
+  .dropdown-submenu { position: relative; }
+  .dropdown-submenu > .dropdown-menu { top: 0; left: 100%; margin-left: 0.1rem; margin-right: 0.1rem; }
+  .whatsapp-button { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; border-radius: 50%; padding: 15px; font-size: 24px; z-index: 1000; text-decoration: none; }
+  .safari-preview img { height:200px; object-fit: cover; border-radius:8px; transition: transform 0.3s; }
+  .safari-preview img:hover { transform: scale(1.05); }
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Manifest Safaris</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Safaris & Adventures</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">Kenya</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#kenya-mini">Mini Safari – 3 Days</a></li>
+                <li><a class="dropdown-item" href="#kenya-classic">Classic Safari – 7 Days</a></li>
+                <li><a class="dropdown-item" href="#kenya-great">Great Migration – 10 Days</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">Uganda</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#uganda-gorilla">Gorilla Trek – 5 Days</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">Rwanda</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#rwanda-gorilla">Gorilla Escape – 5 Days</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">Zanzibar</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#zanzibar-spice">Spice & Sand – 6 Days</a></li>
+                <li><a class="dropdown-item" href="#zanzibar-diani">Diani Beach – 5 Days</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="signup.html">Sign Up</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/254724382506" class="whatsapp-button" target="_blank">&#x1F4AC;</a>
+
+<!-- Hero Section -->
+<section class="text-center my-5">
+  <h1 class="display-4">Unveiling Africa’s Finest Journeys</h1>
+  <p class="lead">Experience luxury wildlife safaris, gorilla treks, and pristine beaches with Manifest Safaris & Adventures.</p>
+</section>
+
+<!-- About Section -->
+<section id="about" class="container my-5">
+  <h2 class="section-title">Why Travel With Us</h2>
+  <ul>
+    <li>Bespoke itineraries tailored to your desires</li>
+    <li>Handpicked luxury lodges and camps</li>
+    <li>Seamless logistics with expert guides</li>
+    <li>Exclusive wildlife encounters</li>
+    <li>Personalized service from arrival to departure</li>
+  </ul>
+</section>
+
+<!-- Safari Previews -->
+<section class="container my-5">
+  <h2 class="section-title">Our Safari Packages</h2>
+  <div class="row g-4 safari-preview">
+    <div class="col-md-3">
+      <a href="#kenya-mini"><img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2" class="w-100" alt="Kenya Mini Safari"></a>
+      <p class="text-center mt-2">Kenya Mini Safari – 3 Days</p>
+    </div>
+    <div class="col-md-3">
+      <a href="#kenya-classic"><img src="https://images.unsplash.com/photo-1508671546091-2a79f4c135f3" class="w-100" alt="Kenya Classic Safari"></a>
+      <p class="text-center mt-2">Kenya Classic Safari – 7 Days</p>
+    </div>
+    <div class="col-md-3">
+      <a href="#uganda-gorilla"><img src="https://images.unsplash.com/photo-1548092372-4b877c1e50b7" class="w-100" alt="Uganda Gorilla Trek"></a>
+      <p class="text-center mt-2">Uganda Gorilla Trek – 5 Days</p>
+    </div>
+    <div class="col-md-3">
+      <a href="#zanzibar-spice"><img src="https://images.unsplash.com/photo-1526481280691-3bfa7568c12b" class="w-100" alt="Zanzibar Spice & Sand"></a>
+      <p class="text-center mt-2">Zanzibar Spice & Sand – 6 Days</p>
+    </div>
+  </div>
+</section>
+
+<!-- Integrated Safari Sections with Carousels (same as safaris.html) -->
+<div class="container my-5">
+  <!-- Kenya Mini -->
+  <h3 class="section-title" id="kenya-mini">Mini Safari – 3 Days (Kenya)</h3>
+  <div id="kenyaMiniCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active"><img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2" class="d-block w-100"></div>
+      <div class="carousel-item"><img src="https://images.unsplash.com/photo-1508671546091-2a79f4c135f3" class="d-block w-100"></div>
+      <div class="carousel-item"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" class="d-block w-100"></div>
+      <div class="carousel-item"><img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d" class="d-block w-100"></div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#kenyaMiniCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+    <button class="carousel-control-next" type="button" data-bs-target="#kenyaMiniCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+  </div>
+
+  <!-- Kenya Classic -->
+  <h3 class="section-title" id="kenya-classic">Classic Safari – 7 Days (Kenya)</h3>
+  <div id="kenyaClassicCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active"><img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2" class="d-block w-100"></div>
+      <div class="carousel-item"><img src="https://images.unsplash.com/photo-1508671546091-2a79f4c135f3" class="d-block w-100"></div>
+      <div class="carousel-item"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" class="d-block w-100"></div>
+      <div class="carousel-item"><img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d" class="d-block w-100"></div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#kenyaClassicCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+    <button class="carousel-control-next" type="button" data-bs-target="#kenyaClassicCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+  </div>
+
+  <!-- Uganda Gorilla -->
+  <h3 class="section-title" id="uganda-gorilla">Uganda Gorilla Trek – 5 Days</h3>
+  <div id="ugandaGorillaCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active"><img src="https://images.unsplash.com/photo-1548092372-4b877c1e50b7" class="d-block w-100"></div>
+      <div class="carousel-item"><img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2" class="d-block w-100"></div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#ugandaGorillaCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+    <button class="carousel-control-next" type="button" data-bs-target="#ugandaGorillaCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+  </div>
+
+  <!-- Rwanda Gorilla -->
+  <h3 class="section-title" id="rwanda-gorilla">Rwanda Gorilla Escape – 5 Days</h3>
+  <div id="rwandaGorillaCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active"><img src="https://images.unsplash.com/photo-1559582930-6b1b1d36f39f" class="d-block w-100"></div>
+      <div class="carousel-item"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" class="d-block w-100"></div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#rwandaGorillaCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+    <button class="carousel-control-next" type="button" data-bs-target="#rwandaGorillaCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+  </div>
+
+  <!-- Zanzibar Spice -->
+  <h3 class="section-title" id="zanzibar-spice">Zanzibar Spice & Sand – 6 Days</h3>
+  <div id="zanzibarSpiceCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active"><img src="https://images.unsplash.com/photo-1526481280691-3bfa7568c12b" class="d-block w-100"></div>
+      <div class="carousel-item"><img src="https://images.unsplash.com/photo-1543486958-d783bfbf5f56" class="d-block w-100"></div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#zanzibarSpiceCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+    <button class="carousel-control-next" type="button" data-bs-target="#zanzibarSpiceCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+  </div>
+
+  <!-- Zanzibar Diani -->
+  <h3 class="section-title" id="zanzibar-diani">Diani Beach Getaway – 5 Days</h3>
+  <div id="zanzibarDianiCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" class="d-block w-100"></div>
+      <div class="carousel-item"><img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98" class="d-block w-100"></div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#zanzibarDianiCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+    <button class="carousel-control-next" type="button" data-bs-target="#zanzibarDianiCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="container text-center">
+    <p>&copy; 2025 Manifest Safaris & Adventures. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

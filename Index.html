@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manifest Safaris & Adventures</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  :root {
+    --black: #000000;
+    --orange: #ff7a00;
+    --white: #ffffff;
+    --beige: #d8c7a1;
+  }
+  body { background: var(--beige); color: var(--black); }
+  .navbar { background: var(--black); }
+  .navbar-brand, .navbar-nav .nav-link { color: var(--white) !important; font-weight: bold; }
+  .navbar-nav .nav-link:hover { color: var(--orange) !important; }
+  .carousel-inner img { height: 450px; object-fit: cover; border-radius:8px; }
+  .section-title { margin: 40px 0 20px; font-weight:bold; text-align:center; }
+  .whatsapp-button { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; border-radius: 50%; padding: 15px; font-size: 24px; z-index: 1000; text-decoration: none; }
+  /* Black background section for slideshow */
+  .hero-section { background-color: var(--black); padding: 20px 0; }
+  .carousel-caption { background: rgba(0,0,0,0.5); border-radius: 8px; }
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Manifest Safaris</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Safaris & Adventure</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="kenya.html">Kenya</a></li>
+            <li><a class="dropdown-item" href="uganda-holiday.html">Uganda</a></li>
+            <li><a class="dropdown-item" href="rwanda.html">Rwanda</a></li>
+            <li><a class="dropdown-item" href="zanzibar.html">Zanzibar</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="signup.html">Sign Up</a></li>
+        <li class="nav-item"><a class="nav-link" href="holiday.html">Holiday Packages</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/254724382506" class="whatsapp-button" target="_blank">&#x1F4AC;</a>
+
+<!-- Hero Section with Black Background and Slideshow -->
+<section class="hero-section">
+  <div class="container">
+    <h2 class="text-white text-center mb-4">Explore Africa's Big Five</h2>
+    <div id="bigFiveCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1581804928343-502cb5e5f528" class="d-block w-100" alt="Lion">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Lion</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1535930749574-1399327ce78f" class="d-block w-100" alt="Leopard">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Leopard</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1589470730131-10e7b0c246b0" class="d-block w-100" alt="Elephant">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Elephant</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1563148171-34e6443c32e0" class="d-block w-100" alt="Rhino">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Rhino</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1516303080726-97814c9a1f70" class="d-block w-100" alt="Buffalo">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Buffalo</h5>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#bigFiveCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#bigFiveCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Optional Additional Content -->
+<section class="container my-5">
+  <h2 class="section-title">Welcome to Manifest Safaris & Adventures</h2>
+  <p>At Manifest Safaris & Adventures, we craft luxury journeys that unveil Africa’s finest experiences. From the sweeping plains of the Masai Mara to the majestic gorillas of Rwanda, from the golden beaches of Zanzibar to the peaks of Mount Kenya, every journey is curated for discovery, elegance, and exclusivity.</p>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
